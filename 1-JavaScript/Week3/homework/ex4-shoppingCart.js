@@ -30,24 +30,12 @@ function addToShoppingCart(groceryItem) {
     if (shoppingCart.length > 3) {
       shoppingCart.shift();
     }
-    let items = '';
-    for (let i = 0; i < shoppingCart.length; i++) {
-      if (i === shoppingCart.length - 1) {
-        items += shoppingCart[shoppingCart.length - 1];
-      } else {
-        items += shoppingCart[i] + ', ';
-      }
-    }
+    let items = shoppingCart.join(', ');
+
     return `You bought ${items}!`;
   } else {
-    let items = '';
-    for (let i = 0; i < shoppingCart.length; i++) {
-      if (i === shoppingCart.length - 1) {
-        items += shoppingCart[shoppingCart.length - 1];
-      } else {
-        items += shoppingCart[i] + ', ';
-      }
-    }
+    let items = shoppingCart.join(', ');
+
     return `You bought ${items}!`;
   }
 }

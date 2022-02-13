@@ -39,8 +39,6 @@ function calculateTotalPrice(cartToCheckOut) {
   return `Total: €${totalPrice}`;
 }
 
-// calculateTotalPrice(cartForParty);
-
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
