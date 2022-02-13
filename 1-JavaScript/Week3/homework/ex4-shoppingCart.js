@@ -52,10 +52,6 @@ function addToShoppingCart(groceryItem) {
   }
 }
 
-addToShoppingCart();
-addToShoppingCart('chocolate');
-addToShoppingCart('waffles');
-addToShoppingCart('tea');
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
