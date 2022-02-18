@@ -1,0 +1,51 @@
+{
+  "node": "v16.8.0",
+  "system": {
+    "manufacturer": "Apple Inc.",
+    "model": "MacBookAir10,1"
+  },
+  "cpu": {
+    "manufacturer": "Apple",
+    "brand": "M1",
+    "speed": 2.4
+  },
+  "memory": "16 GB",
+  "osInfo": {
+    "platform": "darwin",
+    "distro": "macOS",
+    "release": "12.2"
+  },
+  "vscodeInfo": {
+    "version": "1.64.0",
+    "extensions": [
+      "christian-kohler.path-intellisense",
+      "dbaeumer.vscode-eslint",
+      "DigitalBrainstem.javascript-ejs-support",
+      "erikphansen.vscode-toggle-column-selection",
+      "esbenp.prettier-vscode",
+      "file-icons.file-icons",
+      "formulahendry.auto-close-tag",
+      "formulahendry.code-runner",
+      "hex-ci.stylelint-plus",
+      "hnw.vscode-auto-open-markdown-preview",
+      "naumovs.color-highlight",
+      "ritwickdey.LiveServer",
+      "Tyriar.lorem-ipsum",
+      "WallabyJs.quokka-vscode"
+    ],
+    "userSettings": {
+      "workbench.colorTheme": "Default Dark+",
+      "files.autoSave": "onFocusChange",
+      "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "explorer.confirmDragAndDrop": false,
+      "explorer.confirmDelete": false,
+      "editor.formatOnSave": true,
+      "window.zoomLevel": 1,
+      "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+      }
+    }
+  }
+}
