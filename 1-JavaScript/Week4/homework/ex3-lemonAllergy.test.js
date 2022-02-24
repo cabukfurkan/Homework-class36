@@ -28,12 +28,7 @@ const fruitBasket = [
 // ! Function under test
 function sanitizeFruitBasket(basket, allergicFruit) {
   // TODO complete this function
-  const newArray = [...basket];
-  while (newArray.includes(allergicFruit)) {
-    const index = newArray.indexOf(allergicFruit);
-    newArray.splice(index, 1);
-  }
-
+  const newArray = basket.filter((item) => item !== allergicFruit);
   return newArray;
 }
 

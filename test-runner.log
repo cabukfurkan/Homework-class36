@@ -286,3 +286,42 @@ Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/furkanc
 2022-02-18 11:41:44 info: --------------------------------------
 2022-02-18 11:41:45 info: All unit tests passed.
 2022-02-18 11:41:46 info: All steps were completed successfully
+2022-02-24 11:27:49 info: ------------------------------------------------------
+2022-02-24 11:27:49 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-02-24 11:27:49 info: ------------------------------------------------------
+2022-02-24 11:27:50 info: All unit tests passed.
+2022-02-24 11:27:51 info: All steps were completed successfully
+2022-02-24 11:28:06 info: ------------------------------------------------------
+2022-02-24 11:28:06 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-02-24 11:28:06 info: ------------------------------------------------------
+2022-02-24 11:28:06 info: All unit tests passed.
+2022-02-24 11:28:07 info: All steps were completed successfully
+2022-02-24 11:30:25 info: -------------------------------------------------
+2022-02-24 11:30:25 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-02-24 11:30:25 info: -------------------------------------------------
+2022-02-24 11:30:26 info: All unit tests passed.
+2022-02-24 11:30:26 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  31:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-02-24 11:31:04 info: -------------------------------------------------
+2022-02-24 11:31:04 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-02-24 11:31:04 info: -------------------------------------------------
+2022-02-24 11:31:05 info: All unit tests passed.
+2022-02-24 11:31:05 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  27:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-02-24 11:31:57 info: -------------------------------------------------
+2022-02-24 11:31:57 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-02-24 11:31:57 info: -------------------------------------------------
+2022-02-24 11:31:58 info: All unit tests passed.
+2022-02-24 11:31:58 info: All steps were completed successfully

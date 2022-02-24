@@ -18,17 +18,12 @@
   "vscodeInfo": {
     "version": "1.64.2",
     "extensions": [
+      "2gua.rainbow-brackets",
       "aaron-bond.better-comments",
       "bierner.github-markdown-preview",
-      "bierner.markdown-checkbox",
-      "bierner.markdown-emoji",
       "bierner.markdown-footnotes",
-      "bierner.markdown-preview-github-styles",
-      "bierner.markdown-yaml-preamble",
       "christian-kohler.path-intellisense",
-      "DavidAnson.vscode-markdownlint",
       "dbaeumer.vscode-eslint",
-      "DigitalBrainstem.javascript-ejs-support",
       "eamodio.gitlens",
       "erikphansen.vscode-toggle-column-selection",
       "esbenp.prettier-vscode",
@@ -37,7 +32,6 @@
       "formulahendry.code-runner",
       "hex-ci.stylelint-plus",
       "hnw.vscode-auto-open-markdown-preview",
-      "naumovs.color-highlight",
       "ritwickdey.LiveServer",
       "streetsidesoftware.code-spell-checker",
       "Tyriar.lorem-ipsum",
@@ -52,10 +46,14 @@
       "explorer.confirmDragAndDrop": false,
       "explorer.confirmDelete": false,
       "editor.formatOnSave": true,
-      "window.zoomLevel": 1,
       "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
-      }
+      },
+      "cSpell.userWords": [
+        "Çabuk",
+        "cdefg",
+        "Furkan"
+      ]
     }
   }
 }
