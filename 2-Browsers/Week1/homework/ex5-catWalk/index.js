@@ -22,6 +22,7 @@ const cat = document.querySelector('img');
 let catPos = 0;
 cat.style.left = catPos;
 cat.style.top = '200px';
+//because we move the cat 10px by 10 px to meet the cat with the center of the secreen we use %10 to arrange the meeting ot her wise if (catPos + halfOfImage === center) { never works
 const halfOfImage = cat.width / 2 - ((cat.width / 2) % 10); // 296/2 - 14.8= 133,2
 const border = window.innerWidth - (window.innerWidth % 10); // 1440-144 = 1296
 // console.log(window.innerWidth);
