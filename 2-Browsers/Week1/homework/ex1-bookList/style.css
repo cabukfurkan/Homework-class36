@@ -1,1 +1,53 @@
 /* Write your style here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+
+#my-heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#bookList {
+  /* border: 3px solid red; */
+  width: 90%;
+  margin: 50px 5% 0 5%;
+  height: auto;
+}
+#book-list-ul {
+  /* border: 2px solid blue; */
+  width: 95%;
+  margin: 30px auto 30px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+#book-list-ul li {
+  text-decoration: none;
+  list-style: none;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+#book-list-ul li p {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#book-list-ul li img {
+  width: 30%;
+  padding-bottom: 10px;
+}

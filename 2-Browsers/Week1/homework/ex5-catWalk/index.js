@@ -1,7 +1,6 @@
 'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-5-the-cat-walk
-
 1. Create a variable to store a reference to the `<img>` element.
 2. Change the style of the `<img>` to have a `left` of `0px`, so that it starts 
    at the left hand of the screen.
@@ -16,13 +15,38 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    of a cat dancing (use this URL given below), keep it dancing for 5 seconds, 
    and then replace the img with the original image and have it 
    continue the walk.
-
    Dancing cat URL:
-
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+const cat = document.querySelector('img');
+let catPos = 0;
+cat.style.left = catPos;
+cat.style.top = '200px';
+const halfOfImage = cat.width / 2 - ((cat.width / 2) % 10); // 296/2 - 14.8= 133,2
+const border = window.innerWidth - (window.innerWidth % 10); // 1440-144 = 1296
+// console.log(window.innerWidth);
+const center = border / 2 - ((border / 2) % 10); //1296/2  - 64,8 = 583,2
+let interval = 50;
+
 function catWalk() {
-  // TODO complete this function
+  catPos += 10;
+  cat.style.left = catPos + 'px';
+
+  if (catPos + halfOfImage === center) {
+    //583,2 - 133,2 = 450--- when catPos + halfImg = 450 change src
+    cat.src =
+      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+    interval = 5000;
+    setTimeout(() => {
+      cat.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+      interval = 50;
+    }, 5000); //change image to original walking cat after 5 secs
+  }
+
+  if (catPos === border) {
+    catPos = 0;
+  }
+  setTimeout(catWalk, interval);
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.addEventListener('load', catWalk());

@@ -1,0 +1,59 @@
+{
+  "node": "v16.8.0",
+  "system": {
+    "manufacturer": "Apple Inc.",
+    "model": "MacBookAir10,1"
+  },
+  "cpu": {
+    "manufacturer": "Apple",
+    "brand": "M1",
+    "speed": 2.4
+  },
+  "memory": "16 GB",
+  "osInfo": {
+    "platform": "darwin",
+    "distro": "macOS",
+    "release": "12.2.1"
+  },
+  "vscodeInfo": {
+    "version": "1.64.2",
+    "extensions": [
+      "2gua.rainbow-brackets",
+      "aaron-bond.better-comments",
+      "bierner.github-markdown-preview",
+      "bierner.markdown-footnotes",
+      "christian-kohler.path-intellisense",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "erikphansen.vscode-toggle-column-selection",
+      "esbenp.prettier-vscode",
+      "file-icons.file-icons",
+      "formulahendry.auto-close-tag",
+      "formulahendry.code-runner",
+      "hex-ci.stylelint-plus",
+      "hnw.vscode-auto-open-markdown-preview",
+      "ritwickdey.LiveServer",
+      "streetsidesoftware.code-spell-checker",
+      "Tyriar.lorem-ipsum",
+      "WallabyJs.quokka-vscode"
+    ],
+    "userSettings": {
+      "workbench.colorTheme": "Default Dark+",
+      "files.autoSave": "onFocusChange",
+      "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "explorer.confirmDragAndDrop": false,
+      "explorer.confirmDelete": false,
+      "editor.formatOnSave": true,
+      "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+      },
+      "cSpell.userWords": [
+        "Çabuk",
+        "cdefg",
+        "Furkan"
+      ]
+    }
+  }
+}

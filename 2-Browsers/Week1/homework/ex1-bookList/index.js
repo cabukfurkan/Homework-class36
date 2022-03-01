@@ -12,13 +12,36 @@ element with the book title and author.
 5. Change the style of the book depending on whether you have read it(green) or not(red).
 
 The end result should look something like this:
-https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
+https://hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 -----------------------------------------------------------------------------*/
 //cspell: enable
-
+const imgSrcArr = [
+  'assets/the_design_of_everyday_things.jpg',
+  'assets/the_most_human_human.jpg',
+  'assets/the_pragmatic_programmer.jpg',
+];
 function createBookList(books) {
   // TODO your code goes in here, return the ul element
+  let counter = 0;
+  books.forEach((book) => {
+    const ul = document.querySelector('#book-list-ul');
+    const li = document.createElement('li');
+    const bookTitle = document.createElement('p');
+    bookTitle.textContent = `${book.title} - ${book.author}`;
+    const img = new Image();
+    img.src = imgSrcArr[counter];
+
+    if (book.alreadyRead) {
+      li.style.backgroundColor = 'green';
+    } else {
+      li.style.backgroundColor = 'red';
+    }
+    li.appendChild(bookTitle);
+    li.appendChild(img);
+    ul.appendChild(li);
+    counter += 1;
+  });
 }
 
 function main() {
