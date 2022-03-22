@@ -13,3 +13,8 @@
 2022-03-22 10:55:06 info: ---------------------------------------
 2022-03-22 10:55:07 info: All unit tests passed.
 2022-03-22 10:55:08 info: All steps were completed successfully
+2022-03-22 10:56:02 info: --------------------------------------------
+2022-03-22 10:56:02 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-03-22 10:56:02 info: --------------------------------------------
+2022-03-22 10:56:03 info: All unit tests passed.
+2022-03-22 10:56:04 info: All steps were completed successfully
