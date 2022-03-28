@@ -18,3 +18,111 @@
 2022-03-22 10:56:02 info: --------------------------------------------
 2022-03-22 10:56:03 info: All unit tests passed.
 2022-03-22 10:56:04 info: All steps were completed successfully
+2022-03-28 02:46:45 info: ---------------------------------------
+2022-03-28 02:46:45 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-03-28 02:46:45 info: ---------------------------------------
+2022-03-28 02:46:46 info: All unit tests passed.
+2022-03-28 02:46:47 info: All steps were completed successfully
+2022-03-28 02:57:08 info: --------------------------------------------
+2022-03-28 02:57:08 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-03-28 02:57:08 info: --------------------------------------------
+2022-03-28 02:57:09 info: All unit tests passed.
+2022-03-28 02:57:10 info: All steps were completed successfully
+2022-03-28 03:01:38 info: -------------------------------------------------
+2022-03-28 03:01:38 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-03-28 03:01:38 info: -------------------------------------------------
+2022-03-28 03:01:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    ✓ should exist and be executable
+    ✓ should have all TODO comments removed
+    ✓ `checkDoubleDigits` should not contain unneeded console.log calls
+    ✓ should call new Promise() (1 ms)
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument
+    ✓ should be a function that takes a single argument
+    ✕ (9) should return a rejected promise with an Error object (1 ms)
+    ✓ (10) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    ✓ (99) should return a promise that resolves to "This is a double digit number!"
+    ✕ (100) should return a rejected promise with an Error object
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+    > 67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      68 |   });
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+
+      at expect (node_modules/expect/build/index.js:178:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:67:12)
+
+  ● checkDoubleDigits › (9) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      62 |
+      63 |   test('(9) should return a rejected promise with an Error object', () => {
+    > 64 |     expect.assertions(2);
+         |            ^
+      65 |     const promise = checkDoubleDigits(9);
+      66 |     expect(promise).toBeInstanceOf(Promise);
+      67 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:64:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect(received).rejects.toBeInstanceOf()
+
+    Received promise resolved instead of rejected
+    Resolved to value: "This is a double digit number!"
+
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+    > 93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+         |            ^
+      94 |   });
+      95 | });
+      96 |
+
+      at expect (node_modules/expect/build/index.js:178:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:93:12)
+
+  ● checkDoubleDigits › (100) should return a rejected promise with an Error object
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      88 |
+      89 |   test('(100) should return a rejected promise with an Error object', () => {
+    > 90 |     expect.assertions(2);
+         |            ^
+      91 |     const promise = checkDoubleDigits(100);
+      92 |     expect(promise).toBeInstanceOf(Promise);
+      93 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:90:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        0.165 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2022-03-28 03:02:09 info: -------------------------------------------------
+2022-03-28 03:02:09 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-03-28 03:02:09 info: -------------------------------------------------
+2022-03-28 03:02:10 info: All unit tests passed.
+2022-03-28 03:02:11 info: All steps were completed successfully

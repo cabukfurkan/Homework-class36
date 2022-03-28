@@ -14,13 +14,20 @@ Complete the function called `checkDoubleDigits` such that:
 ------------------------------------------------------------------------------*/
 function checkDoubleDigits(number) {
   return new Promise((resolve, reject) => {
-    if (!(number >= 10 && number <= 99)) {
+    if (!isDoubleDigit(number)) {
       reject(new Error(`Expected a double digit number but got ${number}`));
       return;
     }
     resolve('This is a double digit number!');
   });
 }
+
+const isDoubleDigit = (number) => {
+  if (number >= 10 && number <= 99) {
+    return true;
+  }
+  return false;
+};
 
 function main() {
   checkDoubleDigits(9) // should reject

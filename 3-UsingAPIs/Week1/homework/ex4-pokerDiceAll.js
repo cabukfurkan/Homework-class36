@@ -28,7 +28,7 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  const results = dice.map((die) => rollDie(die));
+  const results = dice.map(rollDie);
   return Promise.all(results);
 }
 
@@ -43,3 +43,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// because promises work asynchronously

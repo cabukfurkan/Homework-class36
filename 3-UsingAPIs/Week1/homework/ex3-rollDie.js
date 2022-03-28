@@ -48,3 +48,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+// Problem doesn't occur now. Because we use reject here, after we cath an error we end the promise working.
