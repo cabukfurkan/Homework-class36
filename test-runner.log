@@ -1,0 +1,495 @@
+2022-03-28 10:27:52 info: ---------------------------------------------
+2022-03-28 10:27:52 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-03-28 10:27:52 info: ---------------------------------------------
+2022-03-28 10:27:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    ✕ HTML should be syntactically valid (66 ms)
+    ✕ should have all TODO comments removed
+    ✓ should use `fetch()`
+    ✓ should use async/wait
+    ✓ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.<anonymous> (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        1.821 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-03-28 10:28:08 info: ---------------------------------------------
+2022-03-28 10:28:08 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-03-28 10:28:08 info: ---------------------------------------------
+2022-03-28 10:28:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    ✕ HTML should be syntactically valid (76 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()`
+    ✓ should use async/wait
+    ✓ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.618 s, estimated 2 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-03-28 10:28:50 info: ---------------------------------------------
+2022-03-28 10:28:50 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-03-28 10:28:50 info: ---------------------------------------------
+2022-03-28 10:28:52 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    ✕ HTML should be syntactically valid (74 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()`
+    ✓ should use async/wait
+    ✓ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.614 s, estimated 2 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-03-28 10:29:17 info: ---------------------------------------------
+2022-03-28 10:29:17 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-03-28 10:29:17 info: ---------------------------------------------
+2022-03-28 10:29:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    ✕ HTML should be syntactically valid (72 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()`
+    ✓ should use async/wait
+    ✓ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.609 s, estimated 2 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-03-28 10:33:41 info: ---------------------------------------------
+2022-03-28 10:33:41 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-03-28 10:33:41 info: ---------------------------------------------
+2022-03-28 10:33:44 info: All unit tests passed.
+2022-03-28 10:33:44 info: All steps were completed successfully
+2022-03-29 03:00:39 info: ------------------------------------------
+2022-03-29 03:00:39 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-03-29 03:00:39 info: ------------------------------------------
+2022-03-29 03:00:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    ✕ HTML should be syntactically valid (76 ms)
+    ✓ should have all TODO comments removed
+    ✓ should use `fetch()`
+    ✓ should use `await fetch()` (1 ms)
+    ✓ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:46:28)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        1.846 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-03-29 03:01:31 info: ------------------------------------------
+2022-03-29 03:01:31 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-03-29 03:01:31 info: ------------------------------------------
+2022-03-29 03:01:33 info: All unit tests passed.
+2022-03-29 03:01:34 info: All steps were completed successfully
+2022-03-29 03:21:38 info: -----------------------------------------
+2022-03-29 03:21:38 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-03-29 03:21:38 info: -----------------------------------------
+2022-03-29 03:22:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[6901:0x150008000]    19841 ms: Scavenge 4058.2 (4125.2) -> 4057.7 (4126.0) MB, 4.5 / 0.0 ms  (average mu = 0.261, current mu = 0.255) allocation failure 
+[6901:0x150008000]    19847 ms: Scavenge 4058.4 (4126.0) -> 4057.9 (4137.2) MB, 5.9 / 0.0 ms  (average mu = 0.261, current mu = 0.255) allocation failure 
+[6901:0x150008000]    22015 ms: Mark-sweep 4065.9 (4137.2) -> 4064.1 (4137.0) MB, 2164.4 / 0.0 ms  (average mu = 0.150, current mu = 0.015) allocation failure scavenge might not succeed
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+ 1: 0x104792dd4 node::Abort() [/usr/local/bin/node]
+ 2: 0x104792f5c node::errors::TryCatchScope::~TryCatchScope() [/usr/local/bin/node]
+ 3: 0x1048df090 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+ 4: 0x1048df024 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+ 5: 0x104a79f68 v8::internal::Heap::GarbageCollectionReasonToString(v8::internal::GarbageCollectionReason) [/usr/local/bin/node]
+ 6: 0x104a7d4d8 v8::internal::Heap::EnsureSweepingCompleted() [/usr/local/bin/node]
+ 7: 0x104a7a720 v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/local/bin/node]
+ 8: 0x104a781cc v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]
+ 9: 0x104a83858 v8::internal::Heap::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]
+10: 0x104a838e8 v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]
+11: 0x104a57f00 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/usr/local/bin/node]
+12: 0x104d87c00 v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]
+13: 0x10508888c Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/usr/local/bin/node]
+14: 0x1093518f8 
+15: 0x109354ad0 
+16: 0x109355038 
+17: 0x10504e094 Builtins_AsyncFunctionAwaitResolveClosure [/usr/local/bin/node]
+18: 0x1050cf1b8 Builtins_PromiseFulfillReactionJob [/usr/local/bin/node]
+19: 0x105040e14 Builtins_RunMicrotasks [/usr/local/bin/node]
+20: 0x10501f604 Builtins_JSRunMicrotasksEntry [/usr/local/bin/node]
+21: 0x104a09c28 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/usr/local/bin/node]
+22: 0x104a0a054 v8::internal::(anonymous namespace)::InvokeWithTryCatch(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/usr/local/bin/node]
+23: 0x104a0a11c v8::internal::Execution::TryRunMicrotasks(v8::internal::Isolate*, v8::internal::MicrotaskQueue*, v8::internal::MaybeHandle<v8::internal::Object>*) [/usr/local/bin/node]
+24: 0x104a2cbc8 v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) [/usr/local/bin/node]
+25: 0x104a2ca44 v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) [/usr/local/bin/node]
+26: 0x1046e2d8c node::InternalCallbackScope::Close() [/usr/local/bin/node]
+27: 0x1046e27c4 node::InternalCallbackScope::~InternalCallbackScope() [/usr/local/bin/node]
+28: 0x10473e7f0 node::Environment::RunTimers(uv_timer_s*) [/usr/local/bin/node]
+29: 0x105000ac0 uv__run_timers [/usr/local/bin/node]
+30: 0x105003ac4 uv_run [/usr/local/bin/node]
+31: 0x1046e3e00 node::SpinEventLoop(node::Environment*) [/usr/local/bin/node]
+32: 0x1047cc114 node::NodeMainInstance::Run(int*, node::Environment*) [/usr/local/bin/node]
+33: 0x1047cbde0 node::NodeMainInstance::Run(node::EnvSerializeInfo const*) [/usr/local/bin/node]
+34: 0x104764e24 node::Start(int, char**) [/usr/local/bin/node]
+35: 0x109231088
+2022-03-29 03:23:22 info: -----------------------------------------
+2022-03-29 03:23:22 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-03-29 03:23:22 info: -----------------------------------------
+2022-03-29 03:23:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[7010:0x138008000]    19587 ms: Scavenge 4067.0 (4132.2) -> 4066.8 (4137.5) MB, 4.0 / 0.0 ms  (average mu = 0.253, current mu = 0.216) allocation failure 
+[7010:0x138008000]    19593 ms: Scavenge 4070.0 (4137.5) -> 4069.5 (4138.7) MB, 4.5 / 0.0 ms  (average mu = 0.253, current mu = 0.216) allocation failure 
+[7010:0x138008000]    20411 ms: Scavenge 4070.8 (4138.7) -> 4070.3 (4148.5) MB, 817.0 / 0.0 ms  (average mu = 0.253, current mu = 0.216) allocation failure 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+ 1: 0x10504add4 node::Abort() [/usr/local/bin/node]
+ 2: 0x10504af5c node::errors::TryCatchScope::~TryCatchScope() [/usr/local/bin/node]
+ 3: 0x105197090 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+ 4: 0x105197024 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+ 5: 0x105331f68 v8::internal::Heap::GarbageCollectionReasonToString(v8::internal::GarbageCollectionReason) [/usr/local/bin/node]
+ 6: 0x105330ab8 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]
+ 7: 0x10533b858 v8::internal::Heap::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]
+ 8: 0x10533b8e8 v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]
+ 9: 0x10530ff00 v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/usr/local/bin/node]
+10: 0x10563fc00 v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]
+11: 0x10594088c Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/usr/local/bin/node]
+12: 0x109a92430 
+13: 0x109a92898 
+14: 0x105906094 Builtins_AsyncFunctionAwaitResolveClosure [/usr/local/bin/node]
+15: 0x1059871b8 Builtins_PromiseFulfillReactionJob [/usr/local/bin/node]
+16: 0x1058f8e14 Builtins_RunMicrotasks [/usr/local/bin/node]
+17: 0x1058d7604 Builtins_JSRunMicrotasksEntry [/usr/local/bin/node]
+18: 0x1052c1c28 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/usr/local/bin/node]
+19: 0x1052c2054 v8::internal::(anonymous namespace)::InvokeWithTryCatch(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/usr/local/bin/node]
+20: 0x1052c211c v8::internal::Execution::TryRunMicrotasks(v8::internal::Isolate*, v8::internal::MicrotaskQueue*, v8::internal::MaybeHandle<v8::internal::Object>*) [/usr/local/bin/node]
+21: 0x1052e4bc8 v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) [/usr/local/bin/node]
+22: 0x1052e4a44 v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) [/usr/local/bin/node]
+23: 0x104f9ad8c node::InternalCallbackScope::Close() [/usr/local/bin/node]
+24: 0x104f9a7c4 node::InternalCallbackScope::~InternalCallbackScope() [/usr/local/bin/node]
+25: 0x104ff67f0 node::Environment::RunTimers(uv_timer_s*) [/usr/local/bin/node]
+26: 0x1058b8ac0 uv__run_timers [/usr/local/bin/node]
+27: 0x1058bbac4 uv_run [/usr/local/bin/node]
+28: 0x104f9be00 node::SpinEventLoop(node::Environment*) [/usr/local/bin/node]
+29: 0x105084114 node::NodeMainInstance::Run(int*, node::Environment*) [/usr/local/bin/node]
+30: 0x105083de0 node::NodeMainInstance::Run(node::EnvSerializeInfo const*) [/usr/local/bin/node]
+31: 0x10501ce24 node::Start(int, char**) [/usr/local/bin/node]
+32: 0x1097ed088
+2022-03-29 03:31:07 info: -----------------------------------------
+2022-03-29 03:31:07 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-03-29 03:31:07 info: -----------------------------------------
+2022-03-29 03:31:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[7281:0x130008000]    20970 ms: Scavenge (reduce) 4046.7 (4109.2) -> 4046.5 (4110.0) MB, 4.1 / 0.0 ms  (average mu = 0.386, current mu = 0.268) allocation failure 
+[7281:0x130008000]    24045 ms: Mark-sweep (reduce) 4217.0 (4280.0) -> 4103.4 (4166.9) MB, 3032.8 / 0.0 ms  (average mu = 0.206, current mu = 0.035) allocation failure scavenge might not succeed
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+ 1: 0x1009fadd4 node::Abort() [/usr/local/bin/node]
+ 2: 0x1009faf5c node::errors::TryCatchScope::~TryCatchScope() [/usr/local/bin/node]
+ 3: 0x100b47090 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+ 4: 0x100b47024 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+ 5: 0x100ce1f68 v8::internal::Heap::GarbageCollectionReasonToString(v8::internal::GarbageCollectionReason) [/usr/local/bin/node]
+ 6: 0x100ce0ab8 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]
+ 7: 0x100ceb858 v8::internal::Heap::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]
+ 8: 0x100ceb8e8 v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]
+ 9: 0x100cb8a74 v8::internal::FactoryBase<v8::internal::Factory>::NewFixedArrayWithFiller(v8::internal::Handle<v8::internal::Map>, int, v8::internal::Handle<v8::internal::Oddball>, v8::internal::AllocationType) [/usr/local/bin/node]
+10: 0x100e14350 v8::internal::(anonymous namespace)::ElementsAccessorBase<v8::internal::(anonymous namespace)::FastPackedObjectElementsAccessor, v8::internal::(anonymous namespace)::ElementsKindTraits<(v8::internal::ElementsKind)2> >::GrowCapacity(v8::internal::Handle<v8::internal::JSObject>, unsigned int) [/usr/local/bin/node]
+11: 0x100fe2f38 v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]
+12: 0x1012f088c Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/usr/local/bin/node]
+13: 0x1054cf3c4 
+14: 0x1054cada0 
+15: 0x1054cd738 
+16: 0x1054d14d8 
+17: 0x101289958 Builtins_InterpreterEntryTrampoline [/usr/local/bin/node]
+18: 0x101289958 Builtins_InterpreterEntryTrampoline [/usr/local/bin/node]
+19: 0x1013356e0 Builtins_PromiseConstructor [/usr/local/bin/node]
+20: 0x101286b70 Builtins_JSBuiltinsConstructStub [/usr/local/bin/node]
+21: 0x10137c128 Builtins_ConstructHandler [/usr/local/bin/node]
+22: 0x101289958 Builtins_InterpreterEntryTrampoline [/usr/local/bin/node]
+23: 0x101289958 Builtins_InterpreterEntryTrampoline [/usr/local/bin/node]
+24: 0x1012b6094 Builtins_AsyncFunctionAwaitResolveClosure [/usr/local/bin/node]
+25: 0x1013371b8 Builtins_PromiseFulfillReactionJob [/usr/local/bin/node]
+26: 0x1012a8e14 Builtins_RunMicrotasks [/usr/local/bin/node]
+27: 0x101287604 Builtins_JSRunMicrotasksEntry [/usr/local/bin/node]
+28: 0x100c71c28 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/usr/local/bin/node]
+29: 0x100c72054 v8::internal::(anonymous namespace)::InvokeWithTryCatch(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/usr/local/bin/node]
+30: 0x100c7211c v8::internal::Execution::TryRunMicrotasks(v8::internal::Isolate*, v8::internal::MicrotaskQueue*, v8::internal::MaybeHandle<v8::internal::Object>*) [/usr/local/bin/node]
+31: 0x100c94bc8 v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) [/usr/local/bin/node]
+32: 0x100c94a44 v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) [/usr/local/bin/node]
+33: 0x100bb5670 v8::internal::FunctionCallbackArguments::Call(v8::internal::CallHandlerInfo) [/usr/local/bin/node]
+34: 0x100bb4d8c v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<false>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments) [/usr/local/bin/node]
+35: 0x100bb4638 v8::internal::Builtin_Impl_HandleApiCall(v8::internal::BuiltinArguments, v8::internal::Isolate*) [/usr/local/bin/node]
+36: 0x1012f09cc Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_BuiltinExit [/usr/local/bin/node]
+37: 0x101289958 Builtins_InterpreterEntryTrampoline [/usr/local/bin/node]
+38: 0x10128772c Builtins_JSEntryTrampoline [/usr/local/bin/node]
+39: 0x1012873c4 Builtins_JSEntry [/usr/local/bin/node]
+40: 0x100c71c60 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/usr/local/bin/node]
+41: 0x100c71318 v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*) [/usr/local/bin/node]
+42: 0x100b62934 v8::Function::Call(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*) [/usr/local/bin/node]
+43: 0x10094ae40 node::InternalCallbackScope::Close() [/usr/local/bin/node]
+44: 0x10094b36c node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context) [/usr/local/bin/node]
+45: 0x1009604ac node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*) [/usr/local/bin/node]
+46: 0x100aa06c4 node::StreamBase::CallJSOnreadMethod(long, v8::Local<v8::ArrayBuffer>, unsigned long, node::StreamBase::StreamBaseJSChecks) [/usr/local/bin/node]
+47: 0x100aa26c0 node::EmitToJSStreamListener::OnStreamRead(long, uv_buf_t const&) [/usr/local/bin/node]
+48: 0x100aa6df8 node::LibuvStreamWrap::OnUvRead(long, uv_buf_t const*) [/usr/local/bin/node]
+49: 0x101275300 uv__stream_io [/usr/local/bin/node]
+50: 0x10127d420 uv__io_poll [/usr/local/bin/node]
+51: 0x10126bb9c uv_run [/usr/local/bin/node]
+52: 0x10094be00 node::SpinEventLoop(node::Environment*) [/usr/local/bin/node]
+53: 0x100a34114 node::NodeMainInstance::Run(int*, node::Environment*) [/usr/local/bin/node]
+54: 0x100a33de0 node::NodeMainInstance::Run(node::EnvSerializeInfo const*) [/usr/local/bin/node]
+55: 0x1009cce24 node::Start(int, char**) [/usr/local/bin/node]
+56: 0x105351088
+2022-03-29 03:31:37 info: -----------------------------------------
+2022-03-29 03:31:37 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-03-29 03:31:37 info: -----------------------------------------
+2022-03-29 03:32:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+
+<--- Last few GCs --->
+
+[7349:0x120008000]    20162 ms: Scavenge (reduce) 4046.9 (4110.0) -> 4046.7 (4110.5) MB, 5.0 / 0.0 ms  (average mu = 0.511, current mu = 0.477) allocation failure 
+[7349:0x120008000]    22196 ms: Mark-sweep (reduce) 4216.8 (4280.5) -> 4216.7 (4280.2) MB, 1969.4 / 0.0 ms  (+ 922.9 ms in 248 steps since start of marking, biggest step 5.2 ms, walltime since start of marking -789558 ms) (average mu = 0.378, current mu =
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+ 1: 0x1003badd4 node::Abort() [/usr/local/bin/node]
+ 2: 0x1003baf5c node::errors::TryCatchScope::~TryCatchScope() [/usr/local/bin/node]
+ 3: 0x100507090 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+ 4: 0x100507024 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]
+ 5: 0x1006a1f68 v8::internal::Heap::GarbageCollectionReasonToString(v8::internal::GarbageCollectionReason) [/usr/local/bin/node]
+ 6: 0x1006a0ab8 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]
+ 7: 0x1006ab858 v8::internal::Heap::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]
+ 8: 0x1006ab8e8 v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]
+ 9: 0x100678a74 v8::internal::FactoryBase<v8::internal::Factory>::NewFixedArrayWithFiller(v8::internal::Handle<v8::internal::Map>, int, v8::internal::Handle<v8::internal::Oddball>, v8::internal::AllocationType) [/usr/local/bin/node]
+10: 0x1007d4350 v8::internal::(anonymous namespace)::ElementsAccessorBase<v8::internal::(anonymous namespace)::FastPackedObjectElementsAccessor, v8::internal::(anonymous namespace)::ElementsKindTraits<(v8::internal::ElementsKind)2> >::GrowCapacity(v8::internal::Handle<v8::internal::JSObject>, unsigned int) [/usr/local/bin/node]
+11: 0x1009a2f38 v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]
+12: 0x100cb088c Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/usr/local/bin/node]
+13: 0x104e0f3c4 
+14: 0x104e0ada0 
+15: 0x104e0d738 
+16: 0x104e114d8 
+17: 0x100c49958 Builtins_InterpreterEntryTrampoline [/usr/local/bin/node]
+18: 0x100c49958 Builtins_InterpreterEntryTrampoline [/usr/local/bin/node]
+19: 0x100cf56e0 Builtins_PromiseConstructor [/usr/local/bin/node]
+20: 0x100c46b70 Builtins_JSBuiltinsConstructStub [/usr/local/bin/node]
+21: 0x100d3c128 Builtins_ConstructHandler [/usr/local/bin/node]
+22: 0x100c49958 Builtins_InterpreterEntryTrampoline [/usr/local/bin/node]
+23: 0x100c49958 Builtins_InterpreterEntryTrampoline [/usr/local/bin/node]
+24: 0x100c76094 Builtins_AsyncFunctionAwaitResolveClosure [/usr/local/bin/node]
+25: 0x100cf71b8 Builtins_PromiseFulfillReactionJob [/usr/local/bin/node]
+26: 0x100c68e14 Builtins_RunMicrotasks [/usr/local/bin/node]
+27: 0x100c47604 Builtins_JSRunMicrotasksEntry [/usr/local/bin/node]
+28: 0x100631c28 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/usr/local/bin/node]
+29: 0x100632054 v8::internal::(anonymous namespace)::InvokeWithTryCatch(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/usr/local/bin/node]
+30: 0x10063211c v8::internal::Execution::TryRunMicrotasks(v8::internal::Isolate*, v8::internal::MicrotaskQueue*, v8::internal::MaybeHandle<v8::internal::Object>*) [/usr/local/bin/node]
+31: 0x100654bc8 v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) [/usr/local/bin/node]
+32: 0x100654a44 v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) [/usr/local/bin/node]
+33: 0x100575670 v8::internal::FunctionCallbackArguments::Call(v8::internal::CallHandlerInfo) [/usr/local/bin/node]
+34: 0x100574d8c v8::internal::MaybeHandle<v8::internal::Object> v8::internal::(anonymous namespace)::HandleApiCallHelper<false>(v8::internal::Isolate*, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::HeapObject>, v8::internal::Handle<v8::internal::FunctionTemplateInfo>, v8::internal::Handle<v8::internal::Object>, v8::internal::BuiltinArguments) [/usr/local/bin/node]
+35: 0x100574638 v8::internal::Builtin_Impl_HandleApiCall(v8::internal::BuiltinArguments, v8::internal::Isolate*) [/usr/local/bin/node]
+36: 0x100cb09cc Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_BuiltinExit [/usr/local/bin/node]
+37: 0x100c49958 Builtins_InterpreterEntryTrampoline [/usr/local/bin/node]
+38: 0x100c4772c Builtins_JSEntryTrampoline [/usr/local/bin/node]
+39: 0x100c473c4 Builtins_JSEntry [/usr/local/bin/node]
+40: 0x100631c60 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/usr/local/bin/node]
+41: 0x100631318 v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*) [/usr/local/bin/node]
+42: 0x100522934 v8::Function::Call(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*) [/usr/local/bin/node]
+43: 0x10030ae40 node::InternalCallbackScope::Close() [/usr/local/bin/node]
+44: 0x10030b36c node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context) [/usr/local/bin/node]
+45: 0x1003204ac node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*) [/usr/local/bin/node]
+46: 0x1004606c4 node::StreamBase::CallJSOnreadMethod(long, v8::Local<v8::ArrayBuffer>, unsigned long, node::StreamBase::StreamBaseJSChecks) [/usr/local/bin/node]
+47: 0x1004626c0 node::EmitToJSStreamListener::OnStreamRead(long, uv_buf_t const&) [/usr/local/bin/node]
+48: 0x100466df8 node::LibuvStreamWrap::OnUvRead(long, uv_buf_t const*) [/usr/local/bin/node]
+49: 0x100c35300 uv__stream_io [/usr/local/bin/node]
+50: 0x100c3d420 uv__io_poll [/usr/local/bin/node]
+51: 0x100c2bb9c uv_run [/usr/local/bin/node]
+52: 0x10030be00 node::SpinEventLoop(node::Environment*) [/usr/local/bin/node]
+53: 0x1003f4114 node::NodeMainInstance::Run(int*, node::Environment*) [/usr/local/bin/node]
+54: 0x1003f3de0 node::NodeMainInstance::Run(node::EnvSerializeInfo const*) [/usr/local/bin/node]
+55: 0x10038ce24 node::Start(int, char**) [/usr/local/bin/node]
+56: 0x104b6d088
+2022-03-29 03:40:28 info: ----------------------------------------
+2022-03-29 03:40:28 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-03-29 03:40:28 info: ----------------------------------------
+2022-03-29 03:40:29 info: All unit tests passed.
+2022-03-29 03:40:30 info: All steps were completed successfully
+2022-03-29 04:17:57 info: ----------------------------------------
+2022-03-29 04:17:57 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-03-29 04:17:57 info: ----------------------------------------
+2022-03-29 04:17:57 warn: A unit test file was not provided.
+2022-03-29 04:17:58 info: All steps were completed successfully
+2022-03-29 09:37:02 info: -----------------------------------------
+2022-03-29 09:37:02 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-03-29 09:37:02 info: -----------------------------------------
+2022-03-29 09:37:03 info: All unit tests passed.
+2022-03-29 09:37:04 info: All steps were completed successfully
+2022-03-29 09:37:20 info: ----------------------------------------
+2022-03-29 09:37:20 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-03-29 09:37:20 info: ----------------------------------------
+2022-03-29 09:37:21 info: All unit tests passed.
+2022-03-29 09:37:22 info: All steps were completed successfully
