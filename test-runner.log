@@ -493,3 +493,18 @@ FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memor
 2022-03-29 09:37:20 info: ----------------------------------------
 2022-03-29 09:37:21 info: All unit tests passed.
 2022-03-29 09:37:22 info: All steps were completed successfully
+2022-04-04 01:08:57 info: ---------------------------------------------
+2022-04-04 01:08:57 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-04-04 01:08:57 info: ---------------------------------------------
+2022-04-04 01:09:00 info: All unit tests passed.
+2022-04-04 01:09:01 info: All steps were completed successfully
+2022-04-04 01:10:21 info: ---------------------------------------------
+2022-04-04 01:10:21 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-04-04 01:10:21 info: ---------------------------------------------
+2022-04-04 01:10:23 info: All unit tests passed.
+2022-04-04 01:10:24 info: All steps were completed successfully
+2022-04-04 01:11:11 info: ------------------------------------------
+2022-04-04 01:11:11 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-04-04 01:11:11 info: ------------------------------------------
+2022-04-04 01:11:14 info: All unit tests passed.
+2022-04-04 01:11:15 info: All steps were completed successfully

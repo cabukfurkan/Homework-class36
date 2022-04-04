@@ -24,7 +24,8 @@ Try and avoid using global variables. As much as possible, try and use function
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
 function fetchData(url) {
-  return fetch(`${url}`).then((value) => value.json());
+  const response = fetch(`${url}`);
+  return response.json();
 }
 
 function fetchAndPopulatePokemons(data) {
