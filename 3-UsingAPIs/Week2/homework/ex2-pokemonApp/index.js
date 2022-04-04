@@ -79,7 +79,7 @@ async function main() {
     const pokemons = response.results;
     await fetchAndPopulatePokemons(pokemons);
   } catch (error) {
-    console.error;
+    console.error();
   }
 }
 
