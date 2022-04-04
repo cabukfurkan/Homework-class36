@@ -17,9 +17,9 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    url with `.shx`. There is no server at the modified url, therefore this 
    should result in a network (DNS) error.
 ------------------------------------------------------------------------------*/
-function requestData(url) {
-  const response = fetch(`${url}`);
-  return response.json();
+async function requestData(url) {
+  const response = await fetch(`${url}`);
+  return await response.json();
 }
 
 function renderImage(data) {
