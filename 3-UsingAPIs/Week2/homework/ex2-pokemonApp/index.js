@@ -34,30 +34,24 @@ async function fetchData(url) {
   return await response.json();
 }
 
-async function fetchAndPopulatePokemons(data) {
-  await button.addEventListener(
-    'click',
-    function () {
-      const select = document.createElement('select');
-      select.name = 'pokemons';
-      select.setAttribute('id', 'pokemons');
-      select.style.display = 'block';
-      select.addEventListener('change', function () {
-        fetchImage(
-          `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${select.value}.png`
-        );
-      });
-      document.body.appendChild(select);
+function fetchAndPopulatePokemons(data) {
+  const select = document.createElement('select');
+  select.name = 'pokemons';
+  select.setAttribute('id', 'pokemons');
+  select.style.display = 'block';
+  select.addEventListener('change', function () {
+    fetchImage(
+      `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${select.value}.png`
+    );
+  });
+  document.body.appendChild(select);
 
-      for (const pokemon of data) {
-        const option = document.createElement('option');
-        option.value = data.indexOf(pokemon) + 1;
-        option.text = pokemon.name;
-        select.appendChild(option);
-      }
-    },
-    { once: true }
-  );
+  for (const pokemon of data) {
+    const option = document.createElement('option');
+    option.value = data.indexOf(pokemon) + 1;
+    option.text = pokemon.name;
+    select.appendChild(option);
+  }
 }
 
 function fetchImage(url) {
@@ -72,15 +66,21 @@ function fetchImage(url) {
 }
 
 async function main() {
-  try {
-    const response = await fetchData(
-      'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151'
-    );
-    const pokemons = response.results;
-    await fetchAndPopulatePokemons(pokemons);
-  } catch (error) {
-    console.error(error);
-  }
+  button.addEventListener(
+    'click',
+    async function () {
+      try {
+        const response = await fetchData(
+          'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151'
+        );
+        const pokemons = response.results;
+        await fetchAndPopulatePokemons(pokemons);
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    { once: true }
+  );
 }
 
 window.addEventListener('load', main);
